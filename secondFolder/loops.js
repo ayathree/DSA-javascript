@@ -198,12 +198,69 @@
 
 // console.log(findMax([1,2,3,4,5,6]));
 
+// function findMax(n){
+//     if(n.length == 0) return undefined;
+//     let max =n[0]
+//     for(let i=1; i<=n.length; i++){
+//         if(n[i]>max){
+//            max = n[i] 
+//         }
+//     }
+//     return max
+// }
 
-function findOdd(){
-    for(let i=1; i<=10;i+=1){
-        return i
+// console.log(findMax([1,2,3,4,5,6]));
 
-    }
+// একটি ফাংশন লিখুন যা দুইটি সংখ্যার যোগফল রিটার্ন করে (ফাংশন ডিক্লেয়ারেশন ব্যবহার করে)।
+
+function summation(){
+    let a= 20;
+    let b = 30;
+    return (a+b);
+    
+    
 }
-findOdd()
+console.log(summation());
+
+// একটি ফাংশন লিখুন যা একটি সংখ্যার বর্গ রিটার্ন করে (অ্যারো ফাংশন ব্যবহার করে)।
+
+// classic
+// const squareNumber=()=>{
+//      let a=20;
+//      let b = (a)**2
+//      return b
+// }
+// console.log(squareNumber());
+// reusable
+// const  squareNumber=(num)=>num ** 2
+// console.log(squareNumber(30));
+// math.pow
+const squareNumber=(num)=>Math.pow(num,2)
+console.log(squareNumber(40));
+
+// একটি ক্যালকুলেটর ফাংশন লিখুন (ফাংশন এক্সপ্রেশন ব্যবহার করে)।
+
+const advancedCalculator = function(num1, num2) {
+  return {
+    add: num1 + num2,
+    subtract: num1 - num2,
+    multiply: num1 * num2,
+    divide: num2 !== 0 ? num1 / num2 : 'Error: Division by zero',
+    modulus: num1 % num2,
+    power: num1 ** num2
+  };
+};
+
+const result = advancedCalculator(10, 5);
+console.log(result.add);      // 15
+console.log(result.divide);   // 2
+console.log(result.power);    // 100000
+
+
+
+
+
+
+
+
 
